@@ -135,20 +135,39 @@ body{
 @media only screen and (max-width: 768px) {
     .bento {
         width: 90%; /* Réduire la largeur pour s'adapter aux écrans plus petits */
-        padding: 5vw; /* Ajuster le padding pour les appareils mobiles */
+        padding: 3vw; /* Ajuster le padding pour les appareils mobiles */
+        height: 80vw;
     }
 
     .bento h1 {
         font-size: 5vw; /* Ajuster la taille de la police pour les appareils mobiles */
+        padding: 2vw;
+        margin: 1vw;
+        gap: 1vw;
     }
 
     .bento h2 {
-        font-size: 7vw; /* Ajuster la taille de la police pour les appareils mobiles */
+        font-size: 5vw; /* Ajuster la taille de la police pour les appareils mobiles */
+        padding: 2vw;
+        margin: 1vw;
+    }
+
+    #question-image { 
+        max-width: 75%;
+        max-height: 50%;
+        margin-top: 15vw;
+        margin-bottom: 3vw; 
+        border-radius: 16px;
+
     }
 
     .btn {
         width: 90%; /* Réduire la largeur pour s'adapter aux écrans plus petits */
-        padding: 5vw; /* Ajuster le padding pour les appareils mobiles */
-        font-size: 4vw; /* Ajuster la taille de la police pour les appareils mobiles */
+        padding: 7vw; /* Ajuster le padding pour les appareils mobiles */
+        font-size: 5vw; /* Ajuster la taille de la police pour les appareils mobiles */
+    }
+    #next-btn{
+        font-size: 4vw;
+        padding:5vw;
     }
 }
