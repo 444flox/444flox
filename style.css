@@ -1,9 +1,11 @@
+
 * {
     margin:  0; 
     padding: 0;
     font-family: 'Helvetica';
     box-sizing: border-box;
 }
+
 body{
     background: rgb(235, 235, 235);
 }
@@ -19,20 +21,20 @@ body{
     justify-content: center;
     align-items: center;
     z-index: 9999; 
-  }
-  
-  .overlay.fade-out {
+}
+
+.overlay.fade-out {
     opacity: 0; 
     transition: opacity 0.5s; 
-  }
-  
-  .loader {
+}
+
+.loader {
     text-align: center;
-  }
-  
-  .loader-img {
+}
+
+.loader-img {
     width: 70%;
-  }
+}
 
 .bento {
     background: #fff;
@@ -57,7 +59,6 @@ body{
     left: 0; 
     margin: 5px; 
     padding: 15px;
-
 }
 
 .bento h2{
@@ -69,7 +70,6 @@ body{
     padding: 5px;
     text-align: center;
     font-size: 26px;
-
 }
 
 #question-image {
@@ -81,7 +81,6 @@ body{
     margin-bottom: 30px; 
     border-radius: 16px;
 }
-
 
 .btn{
     background: #fff;
@@ -95,8 +94,7 @@ body{
     border: none;
     display: block;
     font-size: 18px;
-    font-weight: 700
-    ;
+    font-weight: 700;
 }
 
 .btn:hover:not([disabled]){
@@ -111,7 +109,6 @@ body{
 #next-btn{
     background:#4b47bf;
     color: white;
-    ;
     width: 200px;
     border: 0px;
     padding: 12px;
@@ -120,54 +117,39 @@ body{
     cursor: pointer;
     display: none;
     font-size: 16px;
-    font-weight: 700 ;
+    font-weight: 700;
 }
 
 .correct {
     background: rgb(113, 218, 145);
     color: white;
 }
+
 .incorrect{
     background: rgb(218, 66, 84);
     color: white;
 }
 
-@media only screen and (max-width: 768px) {
+/* Styles spécifiques pour les appareils mobiles */
+@media only screen and (max-width: 600px) {
     .bento {
-        width: 90%; /* Réduire la largeur pour s'adapter aux écrans plus petits */
-        padding: 3vw; /* Ajuster le padding pour les appareils mobiles */
-        height: 80vw;
+        height: auto;
     }
 
     .bento h1 {
-        font-size: 5vw; /* Ajuster la taille de la police pour les appareils mobiles */
-        padding: 2vw;
-        margin: 1vw;
-        gap: 1vw;
+        font-size: 14px;
     }
 
     .bento h2 {
-        font-size: 5vw; /* Ajuster la taille de la police pour les appareils mobiles */
-        padding: 2vw;
-        margin: 1vw;
-    }
-
-    #question-image { 
-        max-width: 75%;
-        max-height: 50%;
-        margin-top: 15vw;
-        margin-bottom: 3vw; 
-        border-radius: 16px;
-
+        font-size: 20px;
     }
 
     .btn {
-        width: 90%; /* Réduire la largeur pour s'adapter aux écrans plus petits */
-        padding: 7vw; /* Ajuster le padding pour les appareils mobiles */
-        font-size: 5vw; /* Ajuster la taille de la police pour les appareils mobiles */
+        font-size: 16px;
     }
-    #next-btn{
-        font-size: 4vw;
-        padding:5vw;
+
+    #next-btn {
+        width: 150px;
+        font-size: 14px;
     }
 }
