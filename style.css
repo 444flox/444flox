@@ -1,11 +1,10 @@
 * {
-    margin: 0;
+    margin:  0; 
     padding: 0;
-    font-family: 'Helvetica', sans-serif;
+    font-family: 'Helvetica';
     box-sizing: border-box;
 }
-
-body {
+body{
     background: rgb(235, 235, 235);
 }
 
@@ -14,137 +13,130 @@ body {
     top: 0;
     left: 0;
     width: 100%;
-    height: 100%;
-    background-color: #4b47bf;
+    height: 100%; 
+    background-color: #4b47bf; 
     display: none;
     justify-content: center;
     align-items: center;
-    z-index: 9999;
-}
-
-.overlay.fade-out {
-    opacity: 0;
-    transition: opacity 0.5s;
-}
-
-.loader {
+    z-index: 9999; 
+  }
+  
+  .overlay.fade-out {
+    opacity: 0; 
+    transition: opacity 0.5s; 
+  }
+  
+  .loader {
     text-align: center;
-}
-
-.loader-img {
+  }
+  
+  .loader-img {
     width: 70%;
-}
+  }
 
 .bento {
     background: #fff;
     width: 97%;
-    margin: 10px auto 0;
+    margin: 10px auto 0; 
     border-radius: 16px;
-    padding: 5vw; /* Utilisation de l'unité relative vw pour le padding */
+    padding: 30px;
     position: relative;
-    height: auto; /* Utilisation de la hauteur automatique */
+    height : 320px
 }
 
-.bento h1 {
+.bento h1{
     color: rgb(75, 71, 191);
-    font-size: 4vw; /* Utilisation de l'unité relative vw pour la taille de la police */
+    font-size: 16px;
     background: #aca9ea;
-    text-align: center;
+    text-align:center;
     border-radius: 16px;
-    padding: 3vw; /* Utilisation de l'unité relative vw pour le padding */
+    padding: 16px;
     display: inline-block;
     position: absolute;
     top: 0;
-    left: 0;
-    margin: 5px;
+    left: 0; 
+    margin: 5px; 
+    padding: 15px;
+
 }
 
-.bento h2 {
+.bento h2{
     color: #4b47bf;
     position: absolute;
     bottom: 0;
-    left: 50%;
-    transform: translateX(-50%);
-    padding: 1.5vw; /* Utilisation de l'unité relative vw pour le padding */
+    left: 50%; 
+    transform: translateX(-50%); 
+    padding: 5px;
     text-align: center;
-    font-size: 3.5vw; /* Utilisation de l'unité relative vw pour la taille de la police */
+    font-size: 26px;
+
 }
 
 #question-image {
     display: block;
-    margin: 0 auto;
-    max-width: 90%; /* Utilisation de max-width pour s'assurer que l'image ne dépasse pas de l'écran */
+    align-items: center;
+    margin: 0 auto; 
+    height: 185px;
+    margin-top: 30px; 
+    margin-bottom: 30px; 
     border-radius: 16px;
 }
 
-.btn {
+
+.btn{
     background: #fff;
     color: #4b47bf;
-    width: 90%;
-    padding: 3vw; /* Utilisation de l'unité relative vw pour le padding */
-    margin: 3vw auto; /* Utilisation de l'unité relative vw pour la marge */
+    width: 97%; 
+    padding: 28px; 
+    margin: 8px auto; 
     border-radius: 16px;
     transition: all 0.3s;
     text-align: center;
     border: none;
     display: block;
-    font-size: 3vw; /* Utilisation de l'unité relative vw pour la taille de la police */
-    font-weight: 700;
+    font-size: 18px;
+    font-weight: 700
+    ;
 }
 
-.btn:hover:not([disabled]) {
-    background: rgb(75, 71, 191);
+.btn:hover:not([disabled]){
+    background:rgb(75, 71, 191);
     color: white;
 }
 
-.btn:disabled {
-    cursor: no-drop;
+.btn:disabled{
+    cursor: no-drop
 }
 
-#next-btn {
-    background: #4b47bf;
+#next-btn{
+    background:#4b47bf;
     color: white;
-    width: 30vw; /* Utilisation de l'unité relative vw pour la largeur */
-    padding: 2vw; /* Utilisation de l'unité relative vw pour le padding */
-    margin: 5vw auto 0; /* Utilisation de l'unité relative vw pour la marge */
+    ;
+    width: 200px;
+    border: 0px;
+    padding: 12px;
+    margin: 20px auto 0;
     border-radius: 8px;
     cursor: pointer;
     display: none;
-    font-size: 2.5vw; /* Utilisation de l'unité relative vw pour la taille de la police */
+    font-size: 16px;
+    font-weight: 700 ;
 }
 
 .correct {
     background: rgb(113, 218, 145);
     color: white;
 }
-
-.incorrect {
+.incorrect{
     background: rgb(218, 66, 84);
     color: white;
 }
 
-/* Styles spécifiques pour les appareils mobiles */
-@media only screen and (max-width: 600px) {
-    .bento h1 {
-        font-size: 14px;
-        padding: 10px; /* Ajustement du padding pour les petits écrans */
+@media screen and (max-width: 900px) {
+    .btn{
+        font-size: 6vw;
     }
-
-    .bento h2 {
-        font-size: 18px;
-        padding: 5px; /* Ajustement du padding pour les petits écrans */
-    }
-
-    .btn {
-        font-size: 14px;
-        padding: 10px; /* Ajustement du padding pour les petits écrans */
-        margin: 5px auto; /* Ajustement de la marge pour les petits écrans */
-    }
-
-    #next-btn {
-        width: 150px;
-        font-size: 14px;
-        padding: 10px; /* Ajustement du padding pour les petits écrans */
-        margin-top: 10px; /* Ajustement de la marge pour les petits écrans */
+    #next-btn{
+        font-size: 5vw;
     }
 }
