@@ -15,75 +15,66 @@ document.addEventListener("DOMContentLoaded", function() {
 
 const questions = [
     {
-        question: "Que sont les basques ?",
-        image:"https://image.noelshack.com/fichiers/2024/19/2/1715073249-photo-question-1.jpg" ,
+        question: "Qui est décris comme la Ministre de la mode ?",
+        image:"https://image.noelshack.com/fichiers/2024/20/1/1715606672-photo-question-all.png" ,
         answers:[
-            {text:"Des cheveux ?" ,correct:false },
-            {text:"Des foulards ?" ,correct:false },
-            {text:"L'arrière du frac ?" ,correct:true },
+            {text:"Rose Bertin ?" ,correct:true },
+            {text:"Marie-Antoinette ?" ,correct:false },
+            {text:"Charles-Frederick Worth ?" ,correct:false },
         ]
     },
     {
-        question: "Qu'est-ce qu'une fraise ?",
-        image: "https://image.noelshack.com/fichiers/2024/19/2/1715074513-photo-question-2.jpg" ,
+        question: "Que sont les 'sans-culottes' ?",
+        image: "https://image.noelshack.com/fichiers/2024/20/1/1715606672-photo-question-all.png" ,
         answers:[
-            {text:"Un fruit délicieux ?" ,correct:true },
-            {text:"Un col en dentelle rigide ?" ,correct:true },
-            {text:"Une robe ?" ,correct:false },
-        ]
-    },
-    {
-        question: "Qu'est-ce qu'un busc ?",
-        image: "https://image.noelshack.com/fichiers/2024/19/2/1715076401-personnage.png" ,
-        answers:[
-            {text:"Un parfum fort ?" ,correct:false },
-            {text:"Un buisson ?" ,correct:false },
-            {text:"Un plastron ?" ,correct:true },
-        ]
-    },
-    {
-        question: "À quoi sert le panier ?",
-        image: "https://image.noelshack.com/fichiers/2024/19/2/1715084123-photo-question-4.png" ,
-        answers:[
-            {text:"À ranger ses pommes ?" ,correct:false },
-            {text:"À soutenir les jupes " ,correct:true },
-            {text:"À jouer au basket ?" ,correct:false },
-        ]
-    },
-    {
-        question: "Que sont les crevés ?",
-        image: "https://image.noelshack.com/fichiers/2024/19/2/1715084245-photo-question-5.jpg" ,
-        answers:[
-            {text:"Des chaussures trouées ?" ,correct:false },
-            {text:"Des gens fatigués ?" ,correct:false },
-            {text:"Un assemblage de tissus ?" ,correct:true },
-        ]
-    },
-    {
-        question: "À quoi servent les vertugadins ?",
-        image: "https://image.noelshack.com/fichiers/2024/19/2/1715084528-photo-question-6.jpg" ,
-        answers:[
-            {text:"À élargir sa jupe ?" ,correct:true },
-            {text:"À ne pas prendre de chaise ?" ,correct:false },
-            {text:"À ne pas avoir de ventre?" ,correct:false },
-        ]
-    },
-    {
-        question: "D'ou vient le mot 'cordonier' ?",
-        image: "https://image.noelshack.com/fichiers/2024/19/2/1715085520-photo-question-7.jpg" ,
-        answers:[
-            {text:"Des cordons, ancêtres des lacets ?" ,correct:false },
-            {text:"De la ville de Cordoue ?" ,correct:true },
-            {text:"D'une déformation des mots 'cors au pied' ?" ,correct:false },
+            {text:"Des pantalons ?" ,correct:false },
+            {text:"Un mouvement politique ?" ,correct:false },
+            {text:"Des hommes portant des pantalons à pont ?" ,correct:true },
         ]
     },
     {
         question: "Qu'est-ce qu'une Redingote ?",
         image: "https://image.noelshack.com/fichiers/2024/19/2/1715085770-photo-question-8.jpg" ,
         answers:[
-            {text:"Une veste pour homme ?" ,correct:true },
-            {text:"Élement se trouvant sur les manches ?" ,correct:false },
+            {text:"Un veste pour homme ?" ,correct:true },
+            {text:"Un élément se trouvant sur les manches ?" ,correct:false },
             {text:"Une paire de chaussure ?" ,correct:false },
+        ]
+    },
+    {
+        question: "De quel vêtement s'inspire le style sous l'Empire ?",
+        image: "https://image.noelshack.com/fichiers/2024/20/2/1715678476-question-empire.jpg" ,
+        answers:[
+            {text:"Le peplos ?" ,correct:true },
+            {text:"La robe à la française ? " ,correct:false },
+            {text:"Le pouf ?" ,correct:false },
+        ]
+    },
+    {
+        question: "Que sont les manches gigot ?",
+        image: "https://image.noelshack.com/fichiers/2024/19/2/1715084245-photo-question-5.jpg" ,
+        answers:[
+            {text:"Des manches courtes ?" ,correct:false },
+            {text:"Des manches volumineuses ?" ,correct:true },
+            {text:"Des manches longues ?" ,correct:false },
+        ]
+    },
+    {
+        question: "Quel est l'ancêtre du soutien-gorge ?",
+        image: "https://image.noelshack.com/fichiers/2024/20/1/1715606672-photo-question-all.png" ,
+        answers:[
+            {text:"Le bracelet ?" ,correct:false },
+            {text:"Le corselet ?" ,correct:false },
+            {text:"Le corset ?" ,correct:true },
+        ]
+    },
+    {
+        question: "Que sont les 'Haut de formes' ?",
+        image: "https://image.noelshack.com/fichiers/2024/19/2/1715084528-photo-question-6.jpg" ,
+        answers:[
+            {text:"Un chapeau ?" ,correct:true },
+            {text:"Une veste ?" ,correct:false },
+            {text:"Un gilet ?" ,correct:false },
         ]
     },
     {
@@ -91,35 +82,44 @@ const questions = [
         image: "https://image.noelshack.com/fichiers/2024/19/2/1715086976-photo-question-9.png" ,
         answers:[
             {text:"Un bonbon ?" ,correct:false },
-            {text:"Un pantalon pour homme ?" ,correct:false },
+            {text:"Une boisson ?" ,correct:false },
             {text:"Un homme très élégant ?" ,correct:true },
         ]
     },
     {
-        question: "Jusqu'ou descendaient les culottes des dames ?",
+        question: "Quand les corsets s'attachent par l'avant ont dit qu'il sont ?",
         image: "https://image.noelshack.com/fichiers/2024/19/2/1715086332-photo-question-10.jpg" ,
         answers:[
-            {text:"Jusqu'aux cuisses ?" ,correct:false },
-            {text:"Jusqu'aux chevilles ?" ,correct:true },
-            {text:"Jusqu'aux genoux?" ,correct:false },
+            {text:"Par l'avant ?" ,correct:false },
+            {text:"À la paresseuse ?" ,correct:true },
+            {text:"Inversé ?" ,correct:false },
         ]
     },
     {
-        question: "La robe à tournure accentue ?",
-        image: "https://image.noelshack.com/fichiers/2024/19/2/1715086741-photo-question-11.jpg" ,
+        question: "À quoi set le panier ?",
+        image: "https://image.noelshack.com/fichiers/2024/20/1/1715606788-photo-question-11.png" ,
         answers:[
-            {text:"Les fesses ?" ,correct:true },
-            {text:"Les bras ?" ,correct:false },
-            {text:"Les chevilles?" ,correct:false },
+            {text:"À ranger ses pommes ?" ,correct:false },
+            {text:"À jouer au basket ?" ,correct:false },
+            {text:"À soutenir les jupes ?" ,correct:true },
         ]
     },
     {
-        question: "Quel est l'ancêtre du soutien-gorge ?",
-        image: "https://image.noelshack.com/fichiers/2024/19/2/1715084123-photo-question-4.png" ,
+        question: "Qu'est-ce qu'une fraise ?",
+        image: "https://image.noelshack.com/fichiers/2024/20/1/1715606672-photo-question-all.png" ,
         answers:[
-            {text:"Le bracelet ?" ,correct:false },
-            {text:"Le corselet ?" ,correct:false },
-            {text:"Le corset?" ,correct:true },
+            {text:"Un fruit délicieux ?" ,correct:true },
+            {text:"Une rape ou une lime ?" ,correct:true },
+            {text:"Un cole en dentelle rigide ?" ,correct:true },
+        ]
+    },
+    {
+        question: "De quelles époques datent 'les robes à la française' ?",
+        image: "https://image.noelshack.com/fichiers/2024/20/2/1715678784-question-date.jpg" ,
+        answers:[
+            {text:"1780 → 1789 ?" ,correct:true },
+            {text:"1804 → 1815 ?" ,correct:false },
+            {text:"1914 → 1918 ?" ,correct:false },
         ]
     }
 ];
@@ -189,7 +189,7 @@ function selectAnswer(e){
 function showScore(){
     resetState();
     questionElement.innerHTML = `Vous avez ${score} réponses justes sur ${questions.length}.`;
-    if (score > 10) {
+    if (score > 5) {
         imageElement.src = "https://image.noelshack.com/fichiers/2024/19/2/1715072400-victoire.png";
     } else {
         imageElement.src = "https://image.noelshack.com/fichiers/2024/19/2/1715072400-defaite.png";
