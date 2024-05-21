@@ -15,7 +15,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
 const questions = [
     {
-        question: "Qui est décris comme la Ministre de la mode ?",
+        question: "Qui est décrite comme la Ministre de la mode ?",
         image:"https://image.noelshack.com/fichiers/2024/20/1/1715606672-photo-question-all.png" ,
         answers:[
             {text:"Rose Bertin ?" ,correct:true },
@@ -33,16 +33,16 @@ const questions = [
         ]
     },
     {
-        question: "Qu'est-ce qu'une Redingote ?",
+        question: "Qu'est-ce qu'une redingote ?",
         image: "https://image.noelshack.com/fichiers/2024/19/2/1715085770-photo-question-8.jpg" ,
         answers:[
             {text:"Un veste pour homme ?" ,correct:true },
             {text:"Un élément se trouvant sur les manches ?" ,correct:false },
-            {text:"Une paire de chaussure ?" ,correct:false },
+            {text:"Une paire de chaussures ?" ,correct:false },
         ]
     },
     {
-        question: "De quel vêtement s'inspire le style sous l'Empire ?",
+        question: "De quel vêtement inspire le style sous l'Empire ?",
         image: "https://image.noelshack.com/fichiers/2024/20/2/1715678476-question-empire.jpg" ,
         answers:[
             {text:"Le peplos ?" ,correct:true },
@@ -51,7 +51,7 @@ const questions = [
         ]
     },
     {
-        question: "Que sont les manches gigot ?",
+        question: "Qu'est-ce que sont les manches gigot ?",
         image: "https://image.noelshack.com/fichiers/2024/19/2/1715084245-photo-question-5.jpg" ,
         answers:[
             {text:"Des manches courtes ?" ,correct:false },
@@ -69,7 +69,7 @@ const questions = [
         ]
     },
     {
-        question: "Que sont les 'Haut de formes' ?",
+        question: "Que sont les 'haut-de-formes' ?",
         image: "https://image.noelshack.com/fichiers/2024/19/2/1715084528-photo-question-6.jpg" ,
         answers:[
             {text:"Un chapeau ?" ,correct:true },
@@ -87,21 +87,21 @@ const questions = [
         ]
     },
     {
-        question: "Quand les corsets s'attachent par l'avant ont dit qu'il sont ?",
+        question: "Quand les corsets s'attachent devant, on dit qu'ils sont mis ?",
         image: "https://image.noelshack.com/fichiers/2024/19/2/1715086332-photo-question-10.jpg" ,
         answers:[
-            {text:"Par l'avant ?" ,correct:false },
-            {text:"À la paresseuse ?" ,correct:true },
-            {text:"Inversé ?" ,correct:false },
+            {text:"Par l'avant" ,correct:false },
+            {text:"À la paresseuse" ,correct:true },
+            {text:"Inversés" ,correct:false },
         ]
     },
     {
         question: "À quoi set le panier ?",
         image: "https://image.noelshack.com/fichiers/2024/20/1/1715606788-photo-question-11.png" ,
         answers:[
-            {text:"À ranger ses pommes ?" ,correct:false },
-            {text:"À jouer au basket ?" ,correct:false },
-            {text:"À soutenir les jupes ?" ,correct:true },
+            {text:"À ranger ses pommes" ,correct:false },
+            {text:"À jouer au basket" ,correct:false },
+            {text:"À soutenir les jupes" ,correct:true },
         ]
     },
     {
@@ -114,12 +114,12 @@ const questions = [
         ]
     },
     {
-        question: "De quelles époques datent 'les robes à la française' ?",
+        question: "De quelles époque datent 'les robes à la française' ?",
         image: "https://image.noelshack.com/fichiers/2024/20/2/1715678784-question-date.jpg" ,
         answers:[
-            {text:"1780 → 1789 ?" ,correct:true },
-            {text:"1804 → 1815 ?" ,correct:false },
-            {text:"1914 → 1918 ?" ,correct:false },
+            {text:"1780 → 1789" ,correct:true },
+            {text:"1804 → 1815" ,correct:false },
+            {text:"1914 → 1918" ,correct:false },
         ]
     }
 ];
