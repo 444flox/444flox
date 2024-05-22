@@ -42,7 +42,7 @@ const questions = [
         ]
     },
     {
-        question: "De quel vêtement inspire le style sous l'Empire ?",
+        question: "Quel vêtement inspire le style vestimentaire sous l'Empire ?",
         image: "https://image.noelshack.com/fichiers/2024/20/2/1715678476-question-empire.jpg" ,
         answers:[
             {text:"Le peplos ?" ,correct:true },
@@ -96,7 +96,7 @@ const questions = [
         ]
     },
     {
-        question: "À quoi set le panier ?",
+        question: "À quoi sert le panier ?",
         image: "https://image.noelshack.com/fichiers/2024/20/1/1715606788-photo-question-11.png" ,
         answers:[
             {text:"À ranger ses pommes" ,correct:false },
@@ -108,8 +108,8 @@ const questions = [
         question: "Qu'est-ce qu'une fraise ?",
         image: "https://image.noelshack.com/fichiers/2024/20/1/1715606672-photo-question-all.png" ,
         answers:[
-            {text:"Un fruit délicieux ?" ,correct:true },
-            {text:"Une rape ou une lime ?" ,correct:true },
+            {text:"Un fruit délicieux ?" ,correct:false },
+            {text:"Une rape ou une lime ?" ,correct:false },
             {text:"Un cole en dentelle rigide ?" ,correct:true },
         ]
     },
