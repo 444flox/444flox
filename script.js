@@ -110,7 +110,7 @@ const questions = [
         answers:[
             {text:"Un fruit délicieux ?" ,correct:false },
             {text:"Une rape ou une lime ?" ,correct:false },
-            {text:"Un cole en dentelle rigide ?" ,correct:true },
+            {text:"Un col en dentelle rigide ?" ,correct:true },
         ]
     },
     {
